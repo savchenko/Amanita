@@ -20,4 +20,4 @@ Fork of the Adwaita with a few tweaks to make it less harsh on eyes.
     $ cd _build
     $ ninja
     ```
-5. Alternatively &mdash; download compiled .CSS files from the "Releases" section. These are built on Debian Bullseye using v3.24.24.
+5. Alternatively &mdash; download precompiled .CSS files from the "Releases" section. These are built on Debian Bullseye using v3.24.24.
