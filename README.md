@@ -5,7 +5,7 @@ Fork of the Adwaita with a few tweaks to make it less harsh on eyes.
 1. Clone GTK from upstream: https://gitlab.gnome.org/GNOME/gtk
 2. Checkout tag corresponding to your distribution. To find the version:
     ```
-    dpkg -l libgtk-3-0
+    $ dpkg -l libgtk-3-0
     Desired=Unknown/Install/Remove/Purge/Hold
     | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
     |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
