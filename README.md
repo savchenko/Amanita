@@ -1,5 +1,5 @@
 # Amanita
-Fork of the Adwaita with a few tweaks to make it less harsh on eyes.
+GTK3+ theme based on the Adwaita.
 
 # How to build?
 1. Clone GTK from upstream: https://gitlab.gnome.org/GNOME/gtk
@@ -33,3 +33,7 @@ Fork of the Adwaita with a few tweaks to make it less harsh on eyes.
     ```
 5. Alternatively &mdash; download precompiled .CSS files from the "Releases" section.  
     These are built on Debian Bullseye using v3.24.24.
+  
+# Screenshots
+
+TBD
