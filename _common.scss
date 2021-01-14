@@ -3658,11 +3658,11 @@ progressbar {
 levelbar {
   &.horizontal {
     block {
-      min-height: 1px;
+      min-height: 2px;
     }
 
     &.discrete block {
-      margin: 0 1px;
+      margin: 0 3px;
       min-width: 32px;
     }
   }
@@ -3673,7 +3673,7 @@ levelbar {
     }
 
     &.discrete block {
-      margin: 1px 0;
+      margin: 3px 0;
       min-height: 32px;
     }
   }
@@ -3681,17 +3681,17 @@ levelbar {
   &:backdrop { transition: $backdrop_transition; }
 
   trough {
-    border: 1px solid;
-    padding: 2px;
-    border-radius: 3px;
-    @include entry(normal);
+    border: 0px;
+    padding: 0px;
+    // border-radius: 3px;
+    // @include entry(normal);
 
-    &:backdrop { @include entry(backdrop); }
+    // &:backdrop { @include entry(backdrop); }
   }
 
   block {
-    border: 1px solid;
-    border-radius: 1px;
+    border: 2px solid;
+    border-radius: 3px;
 
     &.low {
       border-color: if($variant == 'light', darken($warning_color, 20%), $warning_color);
@@ -3702,10 +3702,12 @@ levelbar {
 
     &.high,
     &:not(.empty) {
-      border-color: if($variant == 'light', darken($progress_bg_color, 20%), $progress_bg_color);
+      // border-color: if($variant == 'light', darken($progress_bg_color, 20%), $progress_bg_color);
+      border: 1px solid darken($bg_color, 5%);
+      padding: 0px;
       background-color: $progress_bg_color;
 
-      &:backdrop { border-color: $progress_bg_color; }
+      &:backdrop { background: darken($progress_bg_color, 6%); }
     }
 
     &.full {
@@ -3716,10 +3718,10 @@ levelbar {
     }
 
     &.empty {
-      background-color: transparent;
-      border-color: if($variant == 'light', transparentize($fg_color,0.8), transparentize($fg_color,0.9));
+      background-color: darken($bg_color, 5%);
+      border-color: if($variant == 'light', transparentize($fg_color,0.8), darken($bg_color, 6%));
 
-      &:backdrop { border-color: transparentize($backdrop_fg_color,0.85); }
+      &:backdrop { background: darken($bg_color, 3%); border: 2px solid darken($bg_color, 3%); }
     }
   }
 }
