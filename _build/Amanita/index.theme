@@ -1,9 +1,9 @@
 [X-GNOME-Metatheme]
-Name=Adwaita-grey
+Name=Amanita
 Type=X-GNOME-Metatheme
 Comment=Now there is one more
 Encoding=UTF-8
-GtkTheme=Adwaita-grey
+GtkTheme=Amanita
 IconTheme=Adwaita
 CursorTheme=Adwaita
 CursorSize=32
