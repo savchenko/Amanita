@@ -3263,8 +3263,7 @@ scale {
 
   // This defines slider _button_ only.
   slider {
-    @include button(normal-alt, $edge: $shadow_color);
-
+    @include button(normal, $edge: $shadow_color);
     border: 2px solid darken($bg_color, 5%);
     border-radius: 100%;
     transition: $button_transition;
