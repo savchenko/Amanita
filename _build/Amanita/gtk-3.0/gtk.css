@@ -110,7 +110,7 @@ spinner:checked:disabled { opacity: 0.5; }
 .caption { font-weight: 400; font-size: 9pt; }
 
 /**************** Text Entries * */
-spinbutton:not(.vertical), entry { min-height: 32px; padding-left: 8px; padding-right: 8px; border: 1px solid; border-radius: 0px; transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); color: #b5b5b5; border-color: #171717; background-color: #262626; box-shadow: inset 0 0 0 1px rgba(75, 88, 104, 0); }
+spinbutton:not(.vertical), entry { min-height: 32px; padding-left: 8px; padding-right: 8px; border: 1px solid; border-radius: 0px; transition: none; color: #b5b5b5; border-color: #171717; background-color: #262626; box-shadow: inset 0 0 0 1px rgba(75, 88, 104, 0); }
 
 spinbutton:not(.vertical) image.left, entry image.left { margin-right: 6px; }
 
@@ -234,7 +234,7 @@ notebook > header > tabs > arrow:backdrop:disabled:active, notebook > header > t
 
 button.titlebutton:backdrop, button.sidebar-button:backdrop, notebook > header > tabs > arrow:backdrop, button.titlebutton:disabled, button.sidebar-button:disabled, notebook > header > tabs > arrow:disabled, button.flat:backdrop, button.flat:disabled, button.flat:backdrop:disabled { border-color: transparent; background-color: transparent; background-image: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0); text-shadow: none; -gtk-icon-shadow: none; }
 
-notebook > header > tabs > arrow:disabled, button:disabled { color: #777777; border-color: #171717; background-image: image(#2b2b2b); text-shadow: none; -gtk-icon-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
+notebook > header > tabs > arrow:disabled, button:disabled { color: #777777; border-color: #171717; background-image: image(#2b2b2b); text-shadow: none; -gtk-icon-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0); color: dimgray; }
 
 notebook > header > tabs > arrow:disabled:active, notebook > header > tabs > arrow:disabled:checked, button:disabled:active, button:disabled:checked { color: #777777; border-color: #171717; background-image: image(#1e1e1e); box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
 
@@ -574,7 +574,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 .inline-toolbar:backdrop, searchbar > revealer > box:backdrop, .location-bar:backdrop { border-color: #1c1c1c; background-color: #282828; box-shadow: none; transition: none; }
 
 /*************** Header bars * */
-.titlebar:not(headerbar), headerbar { padding: 0 6px; min-height: 46px; border-width: 0 0 1px; border-style: solid; border-color: #080808; border-radius: 0; background: #171717 linear-gradient(to top, #212121, #262626); box-shadow: inset 0 1px #333333; /* Darken switchbuttons for headerbars. issue #1588 */ /* hide the close button separator */ }
+.titlebar:not(headerbar), headerbar { padding: 0 6px; min-height: 46px; border-width: 0 0 1px; border-style: solid; border-color: #080808; border-radius: 0; background: #1a1a1a linear-gradient(to top, #242424, #292929); box-shadow: inset 0 1px #333333; /* Darken switchbuttons for headerbars. issue #1588 */ /* hide the close button separator */ }
 
 .titlebar:backdrop:not(headerbar), headerbar:backdrop { border-color: #1c1c1c; background-color: #2e2e2e; background-image: none; box-shadow: inset 0 1px #333333; transition: none; }
 
@@ -582,7 +582,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) .subtitle, headerbar .subtitle { font-size: smaller; padding-left: 12px; padding-right: 12px; }
 
-.titlebar:not(headerbar) stackswitcher button:checked, .titlebar:not(headerbar) button.toggle:checked, headerbar stackswitcher button:checked, headerbar button.toggle:checked { background: image(#1a1a1a); border-color: #0f0f0f; border-top-color: #030303; }
+.titlebar:not(headerbar) stackswitcher button:checked, .titlebar:not(headerbar) button.toggle:checked, headerbar stackswitcher button:checked, headerbar button.toggle:checked { background: image(#1c1c1c); border-color: #0f0f0f; border-top-color: #030303; }
 
 .titlebar:not(headerbar) stackswitcher button:checked:backdrop, .titlebar:not(headerbar) button.toggle:checked:backdrop, headerbar stackswitcher button:checked:backdrop, headerbar button.toggle:checked:backdrop { color: #777777; border-color: #1c1c1c; background-image: image(#232323); box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
 
@@ -758,16 +758,16 @@ treeview.view header button:backdrop:disabled { border-color: #2e2e2e; backgroun
 
 treeview.view header button:last-child { border-right-style: none; }
 
-/********* Menus * */
-menubar, .menubar { -GtkWidget-window-dragging: true; padding: 0px; box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1); }
+/********* Menus * / menu toolbar */
+menubar, .menubar { -GtkWidget-window-dragging: true; padding: 0px; color: #9c9c9c; }
 
-menubar:backdrop, .menubar:backdrop { background-color: #2e2e2e; }
+menubar:backdrop, .menubar:backdrop { background-color: #2e2e2e; color: #757575; }
 
 menubar > menuitem, .menubar > menuitem { min-height: 16px; padding: 4px 8px; }
 
 menubar > menuitem menu:dir(rtl), menubar > menuitem menu:dir(ltr), .menubar > menuitem menu:dir(rtl), .menubar > menuitem menu:dir(ltr) { border-radius: 0; padding: 0; }
 
-menubar > menuitem:hover, .menubar > menuitem:hover { box-shadow: inset 0 -3px #4b5868; color: #6e8aab; }
+menubar > menuitem:hover, .menubar > menuitem:hover { box-shadow: inset 0 -3px #4b5868; color: #cfcfcf; }
 
 menubar > menuitem:disabled, .menubar > menuitem:disabled { color: #777777; box-shadow: none; }
 
@@ -1053,7 +1053,7 @@ scrollbar.horizontal button.up { -gtk-icon-source: -gtk-icontheme("pan-start-sym
 treeview ~ scrollbar.vertical { border-top: 1px solid #171717; margin-top: -1px; }
 
 /********** Switch * Slider */
-switch { background-color: #232323; border-radius: 14px; border: 2px solid #262626; color: #BFBFBF; text-shadow: none; /* only show i / o for the accessible theme */ }
+switch { outline-offset: -4px; background-color: #232323; border-radius: 14px; border: 2px solid #262626; color: #BFBFBF; text-shadow: none; /* only show i / o for the accessible theme */ }
 
 switch:checked { background: image(#4b5868); box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.3); }
 

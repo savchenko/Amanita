@@ -1,5 +1,11 @@
 # Amanita
-GTK3+ theme based on the Adwaita.
+GTK3+ theme based on the Adwaita:
+- Focus on content rather than decoration
+- Utilitarian and calm
+- Easy on eyes
+
+# How to install pre-compiled version?
+Download from the "Releases" section; built on Debian Bullseye using `libgtk v3.24.24-1`.
 
 # How to build?
 1. Clone GTK from upstream: https://gitlab.gnome.org/GNOME/gtk
@@ -31,9 +37,6 @@ GTK3+ theme based on the Adwaita.
     $ cd _build
     $ ninja
     ```
-5. Alternatively &mdash; download precompiled .CSS files from the "Releases" section.  
-    These are built on Debian Bullseye using v3.24.24.
-  
-# Screenshots
 
+# Screenshots
 TBD
