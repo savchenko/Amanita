@@ -39,4 +39,10 @@ Download from the "Releases" section; built on Debian Bullseye using `libgtk v3.
     ```
 
 # Screenshots
-TBD
+
+![image](https://user-images.githubusercontent.com/300146/105485759-4b048200-5cfd-11eb-8159-065ab54998bd.png)
+
+![image](https://user-images.githubusercontent.com/300146/105485820-61124280-5cfd-11eb-9ab2-637729f475b4.png)
+
+![image](https://user-images.githubusercontent.com/300146/105485828-653e6000-5cfd-11eb-907c-020a0c5d6d5e.png)
+
